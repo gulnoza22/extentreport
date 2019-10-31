@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Report]" parallel="classes">
+  <parameter name="OS" value="Windows"/>
+  <parameter name="browser" value="Chrome"/>
+  <listeners>
+    <listener class-name="Extentreports.Extentreportdemo.ListenerReporterForHealthcheck"/>
+  </listeners>
+  <test thread-count="5" name="Healthcheck Report(failed)" parallel="classes">
+    <classes>
+      <class name="Extentreports.Extentreportdemo.Healthcheck">
+        <methods>
+          <include name="print"/>
+        </methods>
+      </class> <!-- Extentreports.Extentreportdemo.Healthcheck -->
+    </classes>
+  </test> <!-- Healthcheck Report(failed) -->
+</suite> <!-- Failed suite [Report] -->
